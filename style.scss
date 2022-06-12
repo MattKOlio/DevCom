@@ -1,0 +1,11 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import 'scss/general/typography';
+@import 'scss/general/components';
+@import 'scss/login';

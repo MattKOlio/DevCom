@@ -1,0 +1,1 @@
+const COOKIE_DURATION = 365

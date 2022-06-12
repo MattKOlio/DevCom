@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevCom | Title</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+    <script src="js/consts.js"></script>
+    <!-- <script src="js/redirect.js" defer></script> -->
+</head>
+<body>
+    <div class="container">
+        <a href="/" id="logo">
+            <img src="assets/logo/logo_text.png" alt="DevCom logo with text" width="250px" height="140.625px">
+        </a>
+        <div class="field-group">
+            <label for="fldUserName"><i class="fa-regular fa-user"></i></label>
+            <input type="text" name="fldUserName" id="fldUserName" placeholder="username">
+        </div>
+        <div class="field-group">
+            <label for="fldPassword"><i class="fa-solid fa-fingerprint"></i></label>
+            <input type="password" name="fldPassword" id="fldPassword" placeholder="password">
+        </div>
+        <button class="btn" id="btnLogin">Log in</button>
+        <button class="btn" id="btnSignup">Sign up</button>
+        <span>or sign up with</span>
+        <div class="social-sign-up">
+            <a href="#" class="social-icon"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="social-icon"><i class="fa-brands fa-google"></i></a>
+            <a href="#" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <a href="/help.html" class="help">Need help?</a>
+    </div>
+</body>
+</html>
