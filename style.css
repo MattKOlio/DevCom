@@ -56,6 +56,13 @@ body {
 .container #logo {
   margin-block: 3rem 2rem;
 }
+.container #logo img {
+  filter: invert(0);
+  transition: all 250ms ease-in-out;
+}
+.container #logo img:hover {
+  filter: invert(0.75);
+}
 .container .field-group {
   width: 70%;
   max-width: 20rem;
@@ -75,7 +82,7 @@ body {
   width: 100%;
   height: 3rem;
   padding-inline: 3rem 1rem;
-  color: #4b64aa;
+  color: #7F7F80;
 }
 .container .btn {
   text-transform: uppercase;
@@ -85,9 +92,16 @@ body {
   max-width: 15rem;
   background-color: #7F7F80;
   color: white;
+  box-shadow: inset 0 0 0 0 #47a5e4;
+  color: white;
+  transition: color 250ms ease-in-out, box-shadow 250ms ease-in-out;
 }
 .container .btn#btnLogin {
   margin-top: 1rem;
+}
+.container .btn:hover {
+  box-shadow: inset 15rem 0 0 0 #47a5e4;
+  color: white;
 }
 .container span {
   color: #7F7F80;
@@ -97,13 +111,21 @@ body {
   display: flex;
   gap: 2rem;
 }
-.container .social-sign-up i {
+.container .social-sign-up .social-icon i {
   color: #7F7F80;
   font-size: 2rem;
+  transition: all 250ms ease-in-out;
+}
+.container .social-sign-up .social-icon:hover i {
+  color: #47a5e4;
 }
 .container .help {
   margin-block: auto;
   color: #7F7F80;
   text-decoration: underline;
   flex: 0 0 max-content;
+  transition: all 250ms ease-in-out;
+}
+.container .help:hover {
+  color: #47a5e4;
 }/*# sourceMappingURL=style.css.map */
