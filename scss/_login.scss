@@ -28,12 +28,40 @@ body {
         max-width: 20rem;
         position: relative;
 
-        label {
+        label,
+        .tooltip-icon,
+        .tooltip {
             position: absolute;
             top: 1rem;
             left: 1rem;
             font-size: 1rem;
             color: #14a5e4;
+        }
+
+        .tooltip-icon,
+        .tooltip {
+            cursor: pointer;
+            left: auto;
+            right: 1rem;
+            color: #7F7F80;
+        }
+
+        .tooltip {
+            top: 2.5rem;
+            background-color: #7F7F80;
+            color: white;
+            pointer-events: none;
+            padding: 1rem;
+            border-radius: 0.25rem;
+            opacity: 0;
+            z-index: 999;
+            transition: all 250ms ease-in-out;
+        }
+
+        .tooltip-icon:hover {
+            & + .tooltip {
+                opacity: 1;
+            }
         }
 
         input {
@@ -44,6 +72,10 @@ body {
             height: 3rem;
             padding-inline: 3rem 1rem;
             color: #7F7F80;
+
+            &#fldPassword {
+                padding-right: 3rem;
+            }
         }
     }
 

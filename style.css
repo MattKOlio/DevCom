@@ -34,6 +34,8 @@ h4 {
 }
 
 .btn {
+  display: flex;
+  justify-content: center;
   border-radius: 100vw;
   padding: 1rem 1.5rem;
   border: 0;
@@ -68,12 +70,35 @@ body {
   max-width: 20rem;
   position: relative;
 }
-.container .field-group label {
+.container .field-group label,
+.container .field-group .tooltip-icon,
+.container .field-group .tooltip {
   position: absolute;
   top: 1rem;
   left: 1rem;
   font-size: 1rem;
   color: #14a5e4;
+}
+.container .field-group .tooltip-icon,
+.container .field-group .tooltip {
+  cursor: pointer;
+  left: auto;
+  right: 1rem;
+  color: #7F7F80;
+}
+.container .field-group .tooltip {
+  top: 2.5rem;
+  background-color: #7F7F80;
+  color: white;
+  pointer-events: none;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  opacity: 0;
+  z-index: 999;
+  transition: all 250ms ease-in-out;
+}
+.container .field-group .tooltip-icon:hover + .tooltip {
+  opacity: 1;
 }
 .container .field-group input {
   border: none;
@@ -83,6 +108,9 @@ body {
   height: 3rem;
   padding-inline: 3rem 1rem;
   color: #7F7F80;
+}
+.container .field-group input#fldPassword {
+  padding-right: 3rem;
 }
 .container .btn {
   text-transform: uppercase;

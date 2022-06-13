@@ -1,6 +1,8 @@
 // Buttons
 
 .btn {
+    display: flex;
+    justify-content: center;
     border-radius: 100vw;
     padding: 1rem 1.5rem;
     border: 0;
